@@ -1,0 +1,15 @@
+{
+  "name": "Dropbox",
+  "description": "A amazing webinterface for Dropbox",
+  "version": "1",
+  "app": {
+    "launch": {
+      "local_path": "src/main.html"
+    }
+  },
+  "icons": {
+    "16": "icon.jpg",
+    "128": "icon.jpg"
+  },
+  "permissions": ["http://*.dropbox.com/", "https://*.dropbox.com/"]
+}

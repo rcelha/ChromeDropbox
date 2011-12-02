@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>foo</title>
+    </head>
+    <body>
+        
+        <script src="lib/oauth/sha1.js"></script>
+        <script src="lib/oauth/oauth.js"></script>
+        <script src="js/oauth.js"></script>
+        <script src="js/dropbox.js"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        
+        <h1>Auth test</h1>
+        <script>
+            var params = OAuthHelper.utils.urlParameters(window.location.href);
+            
+            if(!params.action){
+                DropBoxFS.doRequestToken();
+                DropBoxFS.doAuthorize();
+            }else if(params.action == 'access_token'){
+                var ret = DropBoxFS.doAccessToken();
+            }
+        </script>
+    </body>
+</html>
