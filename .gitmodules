@@ -1,0 +1,3 @@
+[submodule "src/lib/OAuthHelper"]
+	path = src/lib/OAuthHelper
+	url = git@github.com:rcelha/OAuthHelper.git
